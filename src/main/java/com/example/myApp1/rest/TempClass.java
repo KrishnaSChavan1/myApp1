@@ -9,6 +9,9 @@ public class TempClass {
     @Value("${coach.name}")
     private String name;
 
+    @Value("${team.password}")
+    private String password;
+
     @GetMapping("/")
     public String sayHello(){
         return "Hello how are you i am good " + name+" S Chavan";
@@ -17,5 +20,10 @@ public class TempClass {
     @GetMapping("/Home")
     public String homePage(){
         return "You are at home page";
+    }
+
+    @GetMapping("/password")
+    public String passwordPage(){
+        return password;
     }
 }
