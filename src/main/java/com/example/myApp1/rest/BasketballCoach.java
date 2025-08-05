@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class BasketballCoach implements Coach{
 
-//    public BasketballCoach() {
-//        System.out.println("In " + getClass().getSimpleName());
-//    }
+    public BasketballCoach() {
+        System.out.println("In " + getClass().getSimpleName());
+    }
     public String getDailyWorkout(){
         return "Play Basketball";
     }
